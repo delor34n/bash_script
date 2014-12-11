@@ -1,5 +1,10 @@
 # /etc/fstab: static file system information.
 # /etc/fstab: static file system information.
+ 
+ ########################################## 
+ ###### [ SISTEMAS OPERATIVOS 2014 ] ###### 
+ ########################################## 
+ 
 #
 # Use 'blkid' to print the universally unique identifier for a
 # device; this may be used with UUID= as a more robust way to name devices
