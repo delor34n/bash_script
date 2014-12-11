@@ -1,6 +1,6 @@
 #!/bin/bash
 
-progressBar() {
+barraProgreso() {
 	count=0
 	total=34
 	pstr="[======================================================================]"
@@ -14,4 +14,8 @@ progressBar() {
 
 	echo ""
 	echo ""
+}
+
+eliminarCopias() {
+	rm B/*
 }

@@ -19,6 +19,9 @@ echo " #########################################################"
 echo ""
 echo ""
 
+#ELIMINAMOS LAS COPIAS DE SEGURIDAD ANTERIORES CON UNA FUNCIÓN EXTERNA
+eliminarCopias
+
 #OBTENEMOS EL LISTADO DE ARCHIVOS
 FILES_LIST="`ls -l A/ | awk '{print $9}'`"
 
@@ -34,4 +37,8 @@ echo "${FILES_OWNERS}"
 echo ""
 
 #LLAMAMOS A UNA FUNCIÓN PARA SIMULAR UNA BARRA DE PROGRESO
-progressBar
+barraProgreso
+
+for FILE in $FILES_LIST; do
+  sed 1p A/${FILE} > B/${FILE}
+done 
